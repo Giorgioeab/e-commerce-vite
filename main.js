@@ -65,8 +65,7 @@ const products = [
   },
 ];
 
-catalogo.forEach(product => {
-  
+products.forEach((product) => {
   const product_card = `<div id="card-product-${product.id}">
   <img src="../assets/img/${product.image}" alt="Product-1" style="height: 300px;">
   <p class='product-brand'>${product.brand}</p>
@@ -77,5 +76,4 @@ catalogo.forEach(product => {
   </div>`;
 
   document.getElementById("container-product").innerHTML += product_card;
-  
 });
