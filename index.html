@@ -3,21 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href='main.css'/>
-    
-    <title>Lapana Store</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
   </head>
   <body>
-    <header>
-      <img src='' alt='Lapana Store Logo'/>
-      <div>
-        <button>Histórico</button>
-        <button>Carrinho</i></button>
+    <header class="flex justify-between bg-yellow-200 p-2">
+      <img
+        class="h-16"
+        src="./assets/logo/LAPANA Logo 2.png"
+        alt="Logo Lapana Store"
+      />
+      <div class="flex items-end text-color-black p-1 mx-2 gap-2">
+        <button>Histórico<i class="fa-solid fa-user"></i></button>
+        <button>Carrinho<i class="fa-solid fa-cart-shopping"></i></button>
       </div>
     </header>
     <main>
-      <section id='container-product'></section>
+      <section class="flex flex-wrap" id="container-product"></section>
     </main>
-    <script src='main.js'></script>
+    <script src="main.js"></script>
   </body>
 </html>
