@@ -66,7 +66,7 @@ const products = [
 ];
 
 products.forEach((product) => {
-  const product_card = `<div id="card-product-${product.id}">
+  const product_card = `<div class="border-solid border-2 border-sky-500 w-48 m-2" id="card-product-${product.id}">
   <img src="../assets/img/${product.image}" alt="Product-1" style="height: 300px;">
   <p class='product-brand'>${product.brand}</p>
   <p class='product-name'>${product.name}</p>
