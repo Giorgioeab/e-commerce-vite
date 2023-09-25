@@ -13,10 +13,10 @@
     />
     <title>Document</title>
   </head>
-  <body>
+  <body class="flex flex-col bg-stone-300">
     <section
       id="cart"
-      class="fixed top-0 right-0 bg-yellow-300 h-screen w-[360px] text-color-black"
+      class="fixed top-0 right-0 z-50 bg-yellow-800 h-screen right-[-360px] w-[360px] text-color-black"
     >
       <div id="cart-header" class="flex justify-between m-4">
         <p>My Cart</p>
@@ -30,22 +30,24 @@
         <p>Casaco Camurça</p>
       </section>
       <p id="total-bill">R$ 200</p>
-      <button class="bg-orange-400 p-1">Checkout</button>
+      <button class="bg-amber-400 p-1">Checkout</button>
     </section>
-    <header class="flex justify-between bg-yellow-300 p-2">
+    <header class="sticky top-0 flex justify-between bg-yellow-800 text-xl shadow-lg shadow-yellow-900 px-8 py-4">
       <img
         class="h-16"
         src="./assets/logo/LAPANA Logo 2.png"
         alt="Logo Lapana Store"
       />
       <div class="flex items-end text-color-black p-1 mx-2 gap-2">
-        <button>Histórico<i class="fa-solid fa-user"></i></button>
-        <button>Carrinho<i class="fa-solid fa-cart-shopping"></i></button>
+        <button class="mx-2">Histórico<i class="fa-solid fa-user"></i></button>
+        <button class="mr-2" id="cart-open">
+          Carrinho<i class="fa-solid fa-cart-shopping"></i>
+        </button>
       </div>
     </header>
     <main>
-      <section class="flex flex-wrap" id="container-product"></section>
+      <section class="flex flex-wrap p-16 gap-10 justify-center" id="container-product"></section>
     </main>
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
