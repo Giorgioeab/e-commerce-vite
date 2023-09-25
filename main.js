@@ -1,3 +1,5 @@
+import { startingCart } from "./src/cartMenu";
+
 const products = [
   {
     id: 1,
@@ -77,3 +79,5 @@ products.forEach((product) => {
 
   document.getElementById("container-product").innerHTML += product_card;
 });
+
+startingCart();
